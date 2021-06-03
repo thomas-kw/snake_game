@@ -1,4 +1,4 @@
-from turtle import Screen
+from turtle import Turtle, Screen
 from snake import Snake
 from food import Food
 import time
