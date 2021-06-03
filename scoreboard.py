@@ -1,14 +1,16 @@
 from turtle import Turtle
 
+
 class Scoreboard(Turtle):
     def __init__(self):
         super().__init__()
-        self.color() = 'white'
+        self.hideturtle()
+        self.goto((0,280))
+        self.color('white')
+        self.points = 0
+        self.score()
+        self.clear()
 
+    def score(self):
+        self.write(f"Score: {self.points}", align="center", font=("Arial", 15, "normal"))
 
-
-
-
-lescore = Turtle()
-lescore.color('white')
-lescore.write("the dog ate my homework")
