@@ -1,4 +1,4 @@
-from turtle import Turtle, Screen
+from turtle import Screen
 from snake import Snake
 from food import Food
 from scoreboard import Scoreboard
@@ -38,13 +38,10 @@ while game_is_on:
         scoreboard.reset()
         snake.reset()
 
-
     # Detect collision with tail.
     for segment in snake.segments[1:]:
         if snake.head.distance(segment) < 10:
             scoreboard.reset()
             snake.reset()
-
-
 
 screen.exitonclick()
